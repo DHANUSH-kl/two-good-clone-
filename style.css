@@ -1,0 +1,424 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+*::selection {
+    color: #fff;
+    background-color: #000;
+}
+
+html,body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background-color: #f7f7f7;
+}
+
+#nav {
+    /* height: 100px; */
+    width: 100%;
+    /* background-color: burlywood; */
+    position: fixed;
+    z-index: 99;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 25px;
+}
+
+#nav #nav-part2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+#links {
+    padding: 10px;
+}
+
+#nav-part1 {
+    /* background-color: RED; */
+    height: 82px;
+    overflow: hidden;
+}
+
+#nav-part1 svg {
+    display: block;
+}
+
+#nav-part2 #links a {
+    text-transform: uppercase;
+
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    font-size: 14px;
+    margin: 0 20px;
+}
+
+#icons {
+    padding: 10px;
+    border-radius: 50px;
+    background-color: #F7F7F7;
+}
+
+#nav-part2 #icons i {
+    font-size: 18px;
+    margin: 0 20px;
+    font-weight: 100;
+}
+
+
+#page1 {
+    min-height: 100vh;
+    width: 100%;
+    padding: 0 1vw;
+    padding-top: 31vh;
+}
+
+#page1 h1 {
+    font-size: 16.2vw;
+    font-family: futura;
+    line-height: 13.9vw;
+    letter-spacing: -12px;
+    text-align: center;
+}
+
+#video-container {
+    height: 100vh;
+    width: 100%;
+    margin-top: 10vw;
+}
+
+#video-container video {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+#video-container #play {
+    padding: 3vw 2.2vw;
+    background-color: black;
+    color: #fff;
+    font-size: 1.3vw;
+    /* transform: translate(-50%,-50%); */
+    position: fixed;
+    text-transform: uppercase;
+    font-family: futura;
+    border-radius: 50%;
+    opacity: 0;
+    scale: 0;
+}
+
+#page2 {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3vw 1vw;
+}
+
+#page2 .elem {
+    height: 100%;
+    width: 30%;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#page2 .elem img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    scale: 1.1;
+}
+
+#page2 .elem .dets {
+    width: 70%;
+    height: 50px;
+    border-radius: 50px;
+    background-color: rgb(216, 201, 161);
+    position: absolute;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    transform-origin: top;
+}
+
+
+.dets p {
+    font-size: 1vw;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.dets i {
+    margin-right: -1.5vw;
+}
+
+#page3 {
+    min-height: 150vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+#page3 .child {
+    width: 38vw;
+    height: 54vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#page3 .child img {
+    height: 100%;
+}
+
+#curser {
+    width: 200px;
+    height: 200px;
+    position: fixed;
+    border-radius: 50%;
+    background-color:  #dbd8d8;
+    transform: translate(-50%,-50%) scale(0);
+}
+
+#child2::after {
+    content: "THE INSIDE SCOOP GOOD FEELS CRACKER SET";
+    font-size: 0.7vw;
+    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    position: absolute;
+    bottom: -17px;
+    left: 31%;
+
+}
+#child4::after {
+    content: "CHANGE THE COURSE COOK KIT";
+    font-size: 0.7vw;
+    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    position: absolute;
+    bottom: -17px;
+    left: 35%;
+
+}
+#child3::after {
+    content: "HUNTER X TWO GOOD LIMITED EDITION CANDLE";
+    font-size: 0.7vw;
+    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    position: absolute;
+    bottom: -17px;
+    left: 26%;
+
+}
+#child1::after {
+    content: "THE GOOD OLD GAZE KIT";
+    font-size: 0.7vw;
+    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    position: absolute;
+    bottom: -17px;
+
+}
+
+
+@media ( max-width : 600px ) {
+    #nav {
+        /* height: 100px; */
+        width: 100%;
+        /* background-color: burlywood; */
+        position: fixed;
+        z-index: 99;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        padding: 15px;
+    }
+
+    #nav #nav-part2 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 40px;
+    }
+
+    #links {
+        padding: 10px;
+        display: none;
+    }
+
+    #nav-part1 {
+        /* background-color: RED; */
+        height: 67px;
+        overflow: hidden;
+    }
+
+    #nav-part1 svg {
+        display: block;
+        height: 67px;
+        width: 80px;
+    }
+    #nav #twogoodlogo{
+        height: 40px;
+        margin-left: -20px;
+    }
+
+    #icons {
+        padding: 7px;
+        border-radius: 50px;
+        background-color: #F7F7F7;
+    }
+
+    #nav-part2 #icons i {
+        font-size: 15px;
+        margin: 0 20px;
+        font-weight: 100;
+    }
+
+    #page1 {
+        min-height: 70vh;
+        padding: 0 3vw;
+        padding-top: 30vh;
+    }
+    
+    #page1 h1 {
+        font-size: 16.2vw;
+        line-height: 13.9vw;
+        letter-spacing: -5px;
+    }
+    
+    #video-container {
+        height: 25vh;
+        margin-top: 20vw;
+    }
+    
+    #video-container #play {
+        padding: 8vw 6.2vw;
+        font-size: 4vw;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        opacity: 1;
+        scale: 1;
+    }
+
+    #page2 {
+        min-height: 100vh;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 12vw 5vw;
+        flex-direction: column;
+    }
+    
+    #page2 .elem {
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 3.5vw;
+    }
+    
+    #page2 .elem img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        scale: 1.1;
+    }
+
+    #page2 .elem .dets {
+        height: 35px;
+    }
+    
+    #page3 {
+        min-height: 150vh;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    
+    #page3 .child {
+        width: 38vw;
+        height: 54vh;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    #page3 .child img {
+        height: 72%;
+    }
+
+    .dets p {
+        font-size: 3.5vw;
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+    #child2::after {
+        content: "THE INSIDE SCOOP GOOD FEELS CRACKER SET";
+        font-size: 2vw;
+        color: black;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        position: absolute;
+        bottom: 17px;
+        left: -4%;
+        text-align: center;
+    
+    }
+    #child4::after {
+        content: "CHANGE THE COURSE COOK KIT";
+        font-size: 2vw;
+        color: black;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        position: absolute;
+        bottom: 37px;
+        text-align: center;
+        left: 2%;
+    
+    }
+    #child3::after {
+        content: "HUNTER X TWO GOOD LIMITED EDITION CANDLE";
+        font-size: 2vw;
+        color: black;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        text-align: center;
+        position: absolute;
+        bottom: 37px;
+        left: -10vw;
+
+    
+    }
+    #child1::after {
+        content: "THE GOOD OLD GAZE KIT";
+        font-size: 2vw;
+        color: black;
+        text-align: center;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        position: absolute;
+        bottom: 60px;
+    
+    }
+    
+}
